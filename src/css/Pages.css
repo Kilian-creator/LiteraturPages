@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Rascal';
+    src: url('../fonts/rascal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Rascal', sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* prevent scrollbars caused by blur */
+    background:
+            linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+            var(--bg) no-repeat center center;
+    background-size: cover;
+}
+
+/* Vertical title on the left */
+h1 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); /* bottom → top */
+    font-size: 112px;
+    margin: 0;
+    font-family: Rascal, sans-serif;
+    padding: 200px;
+}
+
+h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); /* bottom → top */
+    font-size: 100px;
+    margin: 0;
+    font-family: Rascal, sans-serif;
+    padding: 200px;
+}
+
+/* Content box with blurry background image inside */
+.content {
+    position: relative;
+    width: 600px;
+    min-height: 300px;
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    font-family: "Georgia", serif;
+}
+
+/* Text links group on the right */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    font-family: 'Rascal', sans-serif;
+    font-size: 40px; /* adjust to taste */
+    padding: 200px;
+}
+
+/* Plain Rascal links */
+.download,
+.back {
+    background: none;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.download:hover,
+.back:hover {
+    color: #444;
+}
+

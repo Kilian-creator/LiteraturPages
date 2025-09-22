@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Tokens</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="token-container">
+        <div class="top-right-box">
+            <div class="text-name" data-summary="Buch: Der letzte Insasse eines Gefängnisses kommt frei (auf Probe) und sieht sich außerhalb der Mauern vor allem mit sich selbst konfrontiert. Sein Kampf, um die Freiheit - welche auch immer - wird behandelt.">Mauersegler</div>
+            <div class="text-name" data-summary="War Sankt Martin wirklich so ein cooler Checker wie alle sagen? Und was macht einen coolen Checker überhaupt aus? Die erste Frage wird vielleicht beantwortet.">Sankt Martin LOL</div>
+            <div class="text-name" data-summary="Ein Glas Wein am Tag ist nicht nur gesund, sondern auch sehr wenig: Was gilt als wahr und worauf bauen wir unsere Wahrheiten auf? ">Trink weiter!</div>
+            <div class="text-name" data-summary="Buchausschnitt: Ein katholischer Gottesdienst außer Rand und Band.">Dorfinterlude</div>
+            <div class="text-name" data-summary="Thüringen trauert: Eine Ameise steigt in die RB14 in Jena, außerdem wird Duke Ellington aufgeführt.">Thueringer Blues</div>
+            <div class="text-name" data-summary="In einem Kreuzworträtsel finden wir heraus, was Goethe über Stilmittel dachte.">Deutschunterricht</div>
+            <div class="text-name" data-summary="Ist Angeln Kontemplation? Wenn ja, wie kann es dann seinen Platz in der heutigen Gesellschaft finden? Ein Gespräch zwischen Ausbruch und Schneckenhaus.">Zwiegespraech</div>
+            <div class="text-name" data-summary="Der Held Monkey D Raffy aus One Peace wohnt mittlerweile in Wien und weiß nicht wohin mit dem ganzen Geld. Eine Legende erzählt von der Suche nach der Suche.">MDR</div>
+        </div>
+        <div id="summary-box"></div> <!-- tooltip container -->
+        <div id="image-box">
+            <img id="preview-img" src="" alt="preview">
+        </div> <!-- image container -->
+    </div>
+    <div id="controls">
+        <span class="controls-title tooltip">Velocity Control
+    <span class="tooltip-text">
+      The older the slower, the shorter the faster!
+    </span>
+  </span>
+        <div class="controls-options">
+            <label class="checkbox">
+                <input type="radio" name="velocityMode" value="date" checked>
+                <span class="checkmark"></span>
+                Publish date
+            </label>
+            <label class="checkbox">
+                <input type="radio" name="velocityMode" value="length">
+                <span class="checkmark"></span>
+                Text length
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
