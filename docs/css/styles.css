@@ -149,14 +149,16 @@ body {
     background-color: black;
 }
 
-.checkbox input:checked ~ .checkmark:after {
+.checkbox input:checked ~ .checkmark::after {
     content: "✔";
     position: absolute;
     left: 2px;
     top: -2px;
     font-size: 13px;
     color: white;
+    display: block;
 }
+
 
 /* Tooltip container */
 .tooltip {
@@ -222,5 +224,47 @@ body {
     width: 100%;
     height: auto; /* keeps aspect ratio */
     display: block;
+}
+
+
+.info-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.info-icon {
+    font-family: Rascal, sans-serif;
+    font-size: 48px;
+    cursor: pointer;
+    color: #000;
+    display: inline-block;
+}
+
+/* Textfeld */
+.info-text {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 240px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #000;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    line-height: 1.4;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Hover-Effekt */
+.info-box:hover .info-text {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 

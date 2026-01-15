@@ -25,9 +25,29 @@
     </div>
     <div id="controls">
         <span class="controls-title tooltip">Velocity Control
-    <span class="tooltip-text">
-      The older the slower, the shorter the faster!
-    </span>
+            <span class="tooltip-text">
+                The older the slower, the shorter the faster!
+            </span>
+        </span>
+        
+        <div class="controls-options">
+            <label class="checkbox">
+                <input type="checkbox" name="velocityMode" value="date" checked>
+                <span class="checkmark"></span>
+                Publish date
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="velocityMode" value="length">
+                <span class="checkmark"></span>
+                Text length
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
   </span>
         <div class="controls-options">
             <label class="checkbox">
@@ -45,5 +65,16 @@
 
     <script src="script.js"></script>
 
+    <div class="info-box">
+        <span class="info-icon">?</span>
+        <div class="info-text">
+            <strong>Info</strong><br>
+            Um zu den Texten zu gelangen musst du ein Token fangen und darauf klicken. Du entscheidest selber,
+            wie schnell sie über den Bildschirm fliegen, drücke die Knöpfe in der Velocity Control Box.<br><br>
+            Viel Spaß!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
